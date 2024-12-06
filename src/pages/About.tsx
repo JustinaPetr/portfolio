@@ -27,9 +27,9 @@ const About = () => {
           className="max-w-7xl mx-auto"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Image Section */}
-            <div className="relative">
-              <div className="sticky top-24 h-[600px]">
+            {/* Image Section - removed sticky positioning */}
+            <div>
+              <div className="h-[600px]">
                 <img
                   src="/lovable-uploads/b340cc1a-5dfb-49f1-afe0-e851ef897ba3.png"
                   alt="Profile"
