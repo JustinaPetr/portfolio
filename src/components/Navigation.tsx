@@ -19,7 +19,14 @@ const Navigation = () => {
     <nav className="fixed w-full bg-background/80 backdrop-blur-sm z-50 border-b">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-xl font-bold text-primary">Portfolio</Link>
+          <Link to="/" className="flex items-center space-x-2">
+            <img 
+              src="/lovable-uploads/1079fa62-a2f3-4bc9-90ba-f4f98d578e5a.png" 
+              alt="Logo" 
+              className="w-8 h-8"
+            />
+            <span className="text-sm font-medium text-muted-foreground">Doing stuff with computers</span>
+          </Link>
           
           {/* Mobile menu button */}
           <button

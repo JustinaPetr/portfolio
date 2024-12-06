@@ -5,33 +5,54 @@ const Index = () => {
     <div className="min-h-screen pt-16">
       <div className="container mx-auto px-4">
         <div className="h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center">
-          <motion.h1 
+          <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="max-w-3xl"
           >
-            Welcome to My Portfolio
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl"
-          >
-            I'm a passionate developer creating beautiful and functional web experiences
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <a
-              href="/portfolio"
-              className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.7 }}
+              className="mb-8"
             >
-              View My Work
-            </a>
+              <img 
+                src="/lovable-uploads/1079fa62-a2f3-4bc9-90ba-f4f98d578e5a.png" 
+                alt="Logo" 
+                className="w-32 h-32 mx-auto mb-4"
+              />
+              <h2 className="text-xl text-primary mb-8 font-medium">Doing stuff with computers</h2>
+            </motion.div>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
+            >
+              Data Scientist, Developer Relations Engineer, and educator with a passion for enabling developers to build great applications and turn data into meaningful insights and innovative products.
+            </motion.p>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="space-x-4"
+            >
+              <a
+                href="/portfolio"
+                className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:opacity-90 transition-opacity inline-block"
+              >
+                View My Work
+              </a>
+              <a
+                href="/contact"
+                className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary/10 transition-colors inline-block"
+              >
+                Get in Touch
+              </a>
+            </motion.div>
           </motion.div>
         </div>
       </div>
