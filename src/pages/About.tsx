@@ -18,8 +18,8 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
-      <div className="container mx-auto px-4 py-12">
+    <div className="min-h-screen py-24">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Image Section - removed sticky positioning */}
             <div>
-              <div className="h-[600px]">
+              <div className="h-[600px] w-full">
                 <img
                   src="/lovable-uploads/b340cc1a-5dfb-49f1-afe0-e851ef897ba3.png"
                   alt="Profile"
