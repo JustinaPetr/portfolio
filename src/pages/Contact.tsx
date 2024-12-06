@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Twitter, Github, Linkedin } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
@@ -35,14 +35,33 @@ const Contact = () => {
         >
           <h1 className="text-4xl font-bold mb-8">Get in Touch</h1>
           
+          <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
+            I would love to connect with like-minded individuals who are interested in AI, web3 topics and care about building better developer and user experiences. I am available for collaborations on building developer relations strategies, technical education, and documentation. Fill out the form below and I will get back to your shortly.
+          </p>
+          
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
-              <Mail size={24} />
+            <a 
+              href="https://x.com/juste_petr" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              <Twitter size={24} />
             </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="https://github.com/JustinaPetr" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-foreground hover:text-primary transition-colors"
+            >
               <Github size={24} />
             </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            <a 
+              href="https://www.linkedin.com/in/justina-petraityte/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-foreground hover:text-primary transition-colors"
+            >
               <Linkedin size={24} />
             </a>
           </div>
