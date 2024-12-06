@@ -17,15 +17,15 @@ const Contact = () => {
     
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // You'll need to replace this
-        'YOUR_TEMPLATE_ID', // You'll need to replace this
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
           to_email: 'justina.petraityte@gmail.com'
         },
-        'YOUR_PUBLIC_KEY' // You'll need to replace this
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       toast({
@@ -34,6 +34,7 @@ const Contact = () => {
       });
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
+      console.error('EmailJS Error:', error);
       toast({
         title: "Error",
         description: "There was an error sending your message. Please try again.",
