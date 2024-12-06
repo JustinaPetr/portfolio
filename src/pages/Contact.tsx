@@ -35,8 +35,12 @@ const Contact = () => {
         >
           <h1 className="text-4xl font-bold mb-8">Get in Touch</h1>
           
-          <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
-            I would love to connect with like-minded individuals who are interested in AI, web3 topics and care about building better developer and user experiences. I am available for collaborations on building developer relations strategies, technical education, and documentation. Fill out the form below and I will get back to your shortly.
+          <p className="text-muted-foreground mb-8 text-base leading-relaxed">
+            I would love to connect with like-minded individuals who are interested in AI,<br />
+            web3 topics and care about building better developer and user experiences.<br />
+            I am available for collaborations on building developer relations strategies,<br />
+            technical education, and documentation. Fill out the form below and I will get<br />
+            back to your shortly.
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
