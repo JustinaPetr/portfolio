@@ -38,19 +38,12 @@ const Index = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="space-x-4"
             >
               <a
                 href="/portfolio"
                 className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:opacity-90 transition-opacity inline-block"
               >
                 View My Work
-              </a>
-              <a
-                href="/contact"
-                className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary/10 transition-colors inline-block"
-              >
-                Get in Touch
               </a>
             </motion.div>
           </motion.div>
