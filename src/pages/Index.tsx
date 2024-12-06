@@ -20,16 +20,16 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/1079fa62-a2f3-4bc9-90ba-f4f98d578e5a.png" 
                 alt="Logo" 
-                className="w-32 h-32 mx-auto mb-4"
+                className="w-24 h-24 mx-auto mb-4"
               />
-              <h2 className="text-xl text-primary mb-8 font-medium">Doing stuff with computers</h2>
+              <h1 className="text-2xl font-medium mb-4">Welcome to my Portfolio</h1>
             </motion.div>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed"
+              className="text-lg text-muted-foreground mb-12 leading-relaxed"
             >
               Data Scientist, Developer Relations Engineer, and educator with a passion for enabling developers to build great applications and turn data into meaningful insights and innovative products.
             </motion.p>
