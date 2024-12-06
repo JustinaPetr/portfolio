@@ -4,14 +4,13 @@ import { Twitter, Github, Linkedin } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import emailjs from '@emailjs/browser';
 
-// Initialize EmailJS with your public key
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     message: "",
   });
 
@@ -20,11 +19,11 @@ const Contact = () => {
     
     try {
       console.log('Attempting to send email with template params:', {
-        from_name: formData.name,
-        from_email: formData.email,
+        from_name: formData.from_name,
+        from_email: formData.from_email,
         message: formData.message,
         to_name: 'Justina',
-        reply_to: formData.email,
+        reply_to: formData.from_email,
       });
 
       const response = await emailjs.sendForm(
@@ -41,7 +40,7 @@ const Contact = () => {
           title: "Message sent!",
           description: "Thank you for reaching out. I'll get back to you soon.",
         });
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ from_name: "", from_email: "", message: "" });
       } else {
         throw new Error('Failed to send email');
       }
@@ -111,14 +110,14 @@ const Contact = () => {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
+              <label htmlFor="from_name" className="block text-sm font-medium mb-2">
                 Name
               </label>
               <input
                 type="text"
-                id="name"
-                name="name"
-                value={formData.name}
+                id="from_name"
+                name="from_name"
+                value={formData.from_name}
                 onChange={handleChange}
                 required
                 className="w-full p-3 rounded-lg border border-input bg-background"
@@ -126,14 +125,14 @@ const Contact = () => {
             </div>
             
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
+              <label htmlFor="from_email" className="block text-sm font-medium mb-2">
                 Email
               </label>
               <input
                 type="email"
-                id="email"
-                name="email"
-                value={formData.email}
+                id="from_email"
+                name="from_email"
+                value={formData.from_email}
                 onChange={handleChange}
                 required
                 className="w-full p-3 rounded-lg border border-input bg-background"
