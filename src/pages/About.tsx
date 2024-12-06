@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 
 const About = () => {
   const skills = [
-    "React", "TypeScript", "Node.js", "Tailwind CSS",
-    "Next.js", "GraphQL", "PostgreSQL", "AWS"
+    "Python", "TypeScript", "Node.js", "Solidity",
+    "Rust", "GraphQL", "PostgreSQL", "Kubernetes", 
+    "Docusaurus", 
   ];
 
   return (
@@ -15,7 +16,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl font-bold mb-8">About Me</h1>
+          <h1 className="text-4xl font-bold mb-8">Hi, I'm Justina</h1>
           <div className="prose prose-lg max-w-none">
             <p className="text-lg mb-6">
             I'm a passionate application developer and educator specializing in AI and Web3 topics. I started my career as a Data Scientist and have spent the past six years building Developer Relations strategies and leading teams at early-stage startups. As a constant self-learner, I aim to make technology more accessible, engaging, and easier for developers of all backgrounds and experience levels.
