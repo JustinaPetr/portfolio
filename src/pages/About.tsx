@@ -44,7 +44,7 @@ const About = () => {
               
               <div className="space-y-8 text-lg">
                 <p>
-                  I'm a passionate application developer and educator specializing in AI and Web3 topics. I started my career as a Data Scientist and have spent the past six years building Developer Relations strategies and leading teams at early-stage startups.
+                  I'm a passionate application developer and educator specializing in AI and Web3 fields. I started my career as a Data Scientist and have spent the past six years building Developer Relations strategies and leading teams at early-stage startups.
                 </p>
 
                 <p>

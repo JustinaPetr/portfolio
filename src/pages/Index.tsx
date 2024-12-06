@@ -17,7 +17,7 @@ const Index = () => {
               transition={{ duration: 0.7 }}
               className="mb-8"
             >
-              <h1 className="text-2xl font-medium mb-4">Welcome to my Portfolio</h1>
+              <h1 className="text-2xl font-medium mb-4">Justina Petraityte</h1>
             </motion.div>
             
             <motion.p
@@ -26,7 +26,7 @@ const Index = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-lg text-muted-foreground mb-12 leading-relaxed"
             >
-              Data Scientist, Developer Relations Engineer, and educator with a passion for enabling developers to build great applications and turn data into meaningful insights and innovative products.
+              Developer Relations Engineer, Data Scientist, and tech educator with a passion for enabling developers to build great applications and turn data into meaningful insights and innovative products.
             </motion.p>
             
             <motion.div
