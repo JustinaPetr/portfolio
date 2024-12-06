@@ -56,7 +56,11 @@ const Contact = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
   };
 
   return (
@@ -107,13 +111,13 @@ const Contact = () => {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="from_name" className="block text-sm font-medium mb-2">
+              <label htmlFor="name" className="block text-sm font-medium mb-2">
                 Name
               </label>
               <input
                 type="text"
-                id="from_name"
-                name="from_name"
+                id="name"
+                name="name"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -122,13 +126,13 @@ const Contact = () => {
             </div>
             
             <div>
-              <label htmlFor="reply_to" className="block text-sm font-medium mb-2">
+              <label htmlFor="email" className="block text-sm font-medium mb-2">
                 Email
               </label>
               <input
                 type="email"
-                id="reply_to"
-                name="reply_to"
+                id="email"
+                name="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
