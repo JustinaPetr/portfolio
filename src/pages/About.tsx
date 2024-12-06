@@ -3,7 +3,6 @@ import {
   Code2, Database, Brain, Globe, Terminal, 
   GraduationCap, Rocket, FileCode 
 } from "lucide-react";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 const About = () => {
   const skills = [
@@ -30,11 +29,11 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Image Section */}
             <div className="relative">
-              <div className="sticky top-24">
+              <div className="sticky top-24 h-[600px]">
                 <img
-                  src="/lovable-uploads/4049a2b7-4cfd-4e76-8958-253783e0c627.png"
+                  src="/lovable-uploads/b340cc1a-5dfb-49f1-afe0-e851ef897ba3.png"
                   alt="Profile"
-                  className="w-full rounded-2xl shadow-xl"
+                  className="w-full h-full object-cover rounded-2xl shadow-xl"
                 />
               </div>
             </div>
@@ -43,7 +42,7 @@ const About = () => {
             <div className="space-y-8">
               <h1 className="text-4xl font-bold">Hi, I'm Justina</h1>
               
-              <div className="space-y-6 text-lg">
+              <div className="space-y-8 text-lg">
                 <p>
                   I'm a passionate application developer and educator specializing in AI and Web3 topics. I started my career as a Data Scientist and have spent the past six years building Developer Relations strategies and leading teams at early-stage startups.
                 </p>
