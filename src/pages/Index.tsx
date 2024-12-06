@@ -17,11 +17,6 @@ const Index = () => {
               transition={{ duration: 0.7 }}
               className="mb-8"
             >
-              <img 
-                src="/lovable-uploads/1079fa62-a2f3-4bc9-90ba-f4f98d578e5a.png" 
-                alt="Logo" 
-                className="w-24 h-24 mx-auto mb-4"
-              />
               <h1 className="text-2xl font-medium mb-4">Welcome to my Portfolio</h1>
             </motion.div>
             
