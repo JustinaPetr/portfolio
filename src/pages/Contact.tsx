@@ -4,6 +4,9 @@ import { Twitter, Github, Linkedin } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import emailjs from '@emailjs/browser';
 
+// Initialize EmailJS with your public key
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
