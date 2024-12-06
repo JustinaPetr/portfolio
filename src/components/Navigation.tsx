@@ -25,7 +25,7 @@ const Navigation = () => {
               alt="Logo" 
               className="w-8 h-8"
             />
-            <span className="text-sm font-medium text-muted-foreground">Doing stuff with computers</span>
+            <span className="text-xs font-light text-muted-foreground">Doing stuff with computers</span>
           </Link>
           
           {/* Mobile menu button */}
