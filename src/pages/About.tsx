@@ -18,14 +18,17 @@ const About = () => {
         >
           <h1 className="text-4xl font-bold mb-8">Hi, I'm Justina</h1>
           <div className="prose prose-lg max-w-none">
-            <p className="text-lg mb-6">
-            I'm a passionate application developer and educator specializing in AI and Web3 topics. I started my career as a Data Scientist and have spent the past six years building Developer Relations strategies and leading teams at early-stage startups. As a constant self-learner, I aim to make technology more accessible, engaging, and easier for developers of all backgrounds and experience levels.
-
-            I specialize in creating seamless Developer Experience flows, developing hands-on educational content (both written and video), and helping teams improve their products through direct user feedback. I strive to make the learning process both insightful and enjoyable, ensuring developers feel empowered to build with confidence.
-
-            Throughout my career, I've shared my experiences at numerous developer conferences, from PyData, OSCON, and PyCon for AI topics, to EthCC, EthDenver, and DevCon for Web3 topics.
-
-            Outside of Developer Relations, I'm an avid runner, always on the lookout for my next challenge.
+            <p>
+                I'm a passionate application developer and educator specializing in AI and Web3 topics. I started my career as a Data Scientist and have spent the past six years building Developer Relations strategies and leading teams at early-stage startups. As a constant self-learner, I aim to make technology more accessible, engaging, and easier for developers of all backgrounds and experience levels.
+            </p>
+            <p>
+                I specialize in creating seamless Developer Experience flows, developing hands-on educational content (both written and video), and helping teams improve their products through direct user feedback. I strive to make the learning process both insightful and enjoyable, ensuring developers feel empowered to build with confidence.
+            </p>
+            <p>
+                Throughout my career, I've shared my experiences at numerous developer conferences, from PyData, DevCon, and PyCon for AI topics, to EthCC, EthDenver, and DevCon for Web3 topics.
+            </p>
+            <p>
+                Outside of Developer Relations, I'm an avid runner, always on the lookout for my next challenge.
             </p>
           </div>
 
