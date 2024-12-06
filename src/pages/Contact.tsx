@@ -19,31 +19,32 @@ const Contact = () => {
     e.preventDefault();
     
     try {
-      console.log('Sending email with params:', {
-        serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      console.log('Attempting to send email with template params:', {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_name: 'Justina',
+        reply_to: formData.email,
       });
 
-      const response = await emailjs.send(
+      const response = await emailjs.sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_name: 'Justina',
-          reply_to: formData.email,
-        }
+        e.target as HTMLFormElement,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       console.log('EmailJS Response:', response);
 
-      toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      setFormData({ name: "", email: "", message: "" });
+      if (response.status === 200) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error('Failed to send email');
+      }
     } catch (error) {
       console.error('EmailJS Error:', error);
       toast({
@@ -106,13 +107,13 @@ const Contact = () => {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
+              <label htmlFor="from_name" className="block text-sm font-medium mb-2">
                 Name
               </label>
               <input
                 type="text"
-                id="name"
-                name="name"
+                id="from_name"
+                name="from_name"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -121,13 +122,13 @@ const Contact = () => {
             </div>
             
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
+              <label htmlFor="reply_to" className="block text-sm font-medium mb-2">
                 Email
               </label>
               <input
                 type="email"
-                id="email"
-                name="email"
+                id="reply_to"
+                name="reply_to"
                 value={formData.email}
                 onChange={handleChange}
                 required
