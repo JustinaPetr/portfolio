@@ -34,7 +34,13 @@ const CoursesSection = () => (
           <a href={course.link} target="_blank" rel="noopener noreferrer">
             <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer">
               <CardHeader>
-                <img src={course.image} alt={course.title} className="w-full h-48 object-cover rounded-t-lg mb-4" />
+                <div className="aspect-video w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src={course.image} 
+                    alt={course.title} 
+                    className="w-full h-full object-contain bg-gray-100" 
+                  />
+                </div>
                 <CardTitle>{course.title}</CardTitle>
                 <CardDescription>{course.description}</CardDescription>
               </CardHeader>
