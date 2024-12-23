@@ -3,6 +3,7 @@ import PortfolioDescription from "@/components/portfolio/PortfolioDescription";
 import CoursesSection from "@/components/portfolio/CoursesSection";
 import TutorialsSection from "@/components/portfolio/TutorialsSection";
 import SpeakingSection from "@/components/portfolio/SpeakingSection";
+import BlogSection from "@/components/portfolio/BlogSection";
 import RunnerGame from "@/components/portfolio/RunnerGame";
 
 const Portfolio = () => {
@@ -22,6 +23,7 @@ const Portfolio = () => {
         <CoursesSection />
         <TutorialsSection />
         <SpeakingSection />
+        <BlogSection />
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}
