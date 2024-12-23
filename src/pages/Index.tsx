@@ -26,7 +26,7 @@ const Index = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-lg text-muted-foreground mb-12 leading-relaxed"
             >
-              Developer Relations Engineer, Data Scientist, and tech educator with a passion for enabling developers to build great applications and turn data into meaningful insights and innovative products. Above all - a tinkerer at heart who loves to do stuff with computers.
+              Developer Relations Engineer, Data Scientist, and tech educator with a passion for enabling developers to build great applications and turn data into meaningful insights and innovative products.
             </motion.p>
             
             <motion.div
