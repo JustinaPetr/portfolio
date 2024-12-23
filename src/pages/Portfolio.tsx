@@ -3,6 +3,7 @@ import PortfolioDescription from "@/components/portfolio/PortfolioDescription";
 import CoursesSection from "@/components/portfolio/CoursesSection";
 import TutorialsSection from "@/components/portfolio/TutorialsSection";
 import SpeakingSection from "@/components/portfolio/SpeakingSection";
+import BlogSection from "@/components/portfolio/BlogSection";
 
 const Portfolio = () => {
   return (
@@ -21,6 +22,7 @@ const Portfolio = () => {
         <CoursesSection />
         <TutorialsSection />
         <SpeakingSection />
+        <BlogSection />
       </div>
     </div>
   );
