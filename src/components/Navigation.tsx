@@ -10,6 +10,7 @@ const Navigation = () => {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About' },
     { path: '/portfolio', label: 'Portfolio' },
+    { path: '/blog', label: 'Blog' },
     { path: '/contact', label: 'Get in Touch' },
   ];
 
