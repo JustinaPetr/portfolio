@@ -1,25 +1,14 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
-    title: "Building Conversational AI Assistants",
+    title: "Building Full Stack Apps with Lovable.dev",
     date: "March 15, 2024",
-    description: "Exploring the fundamentals of building AI assistants using modern NLP techniques and best practices.",
-    link: "#"
-  },
-  {
-    title: "The Future of Developer Relations",
-    date: "March 1, 2024",
-    description: "Insights into how DevRel is evolving and what it means for the tech community.",
-    link: "#"
-  },
-  {
-    title: "Data Science in Practice",
-    date: "February 15, 2024",
-    description: "Real-world applications of data science and machine learning in business contexts.",
-    link: "#"
+    description: "A comprehensive guide to building modern web applications using Lovable.dev's AI-powered development platform.",
+    link: "/blog/building-with-lovable"
   }
 ];
 
@@ -37,7 +26,7 @@ const Blog = () => {
             <h1 className="text-4xl font-semibold">Blog</h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="max-w-3xl mx-auto">
             {blogPosts.map((post, index) => (
               <motion.div
                 key={post.title}
@@ -45,17 +34,17 @@ const Blog = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <a href={post.link} className="block h-full">
-                  <Card className="h-full hover:shadow-lg transition-shadow">
+                <Link to={post.link} className="block">
+                  <Card className="hover:shadow-lg transition-shadow mb-8">
                     <CardHeader>
-                      <CardTitle className="text-xl">{post.title}</CardTitle>
+                      <CardTitle className="text-2xl">{post.title}</CardTitle>
                       <CardDescription>{post.date}</CardDescription>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">{post.description}</p>
                     </CardContent>
                   </Card>
-                </a>
+                </Link>
               </motion.div>
             ))}
           </div>
