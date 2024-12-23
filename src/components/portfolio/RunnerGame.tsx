@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
-import { Running } from 'lucide-react';
+import { Run } from 'lucide-react';
 
 const GRAVITY = 0.6;
 const JUMP_FORCE = -10;
@@ -122,7 +122,7 @@ const RunnerGame = () => {
         <p className="text-muted-foreground mb-4">Press SPACE to jump over obstacles!</p>
         {!gameStarted && (
           <Button onClick={startGame} className="gap-2">
-            <Running className="w-4 h-4" />
+            <Run className="w-4 h-4" />
             Start Game
           </Button>
         )}
