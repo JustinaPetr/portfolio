@@ -4,6 +4,18 @@ import { Presentation } from "lucide-react";
 
 const speakingEngagements = [
   {
+    title: "Stop RPC Downtime: How Lava Maintains 99% Uptime for Your Onchain App",
+    event: "Eco Oncahin Event Series",
+    date: "November 2025",
+    link: "https://www.youtube.com/watch?v=eiiq6gAS1TA"
+  },
+  {
+    title: "The Floor Is… Midnight x Lava: Exploring Privacy, Utility, and Community in Web3",
+    event: "The Floor Is... event series",
+    date: "September 2025",
+    link: "https://youtube.com/live/XSXUA26cKK0"
+  },
+  {
     title: "Future trends in Web3 Infrastructure",
     event: "EthCC Builders Club",
     date: "July 2024",
