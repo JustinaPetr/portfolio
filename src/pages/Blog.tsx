@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const blogPosts = [
+  // posts will go here later
 ];
 
 const Blog = () => {
@@ -20,7 +27,24 @@ const Blog = () => {
             <h1 className="text-4xl font-semibold">Blog</h1>
           </div>
 
+          {/* Blog content */}
           <div className="max-w-3xl mx-auto">
+            {blogPosts.length === 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="text-center text-muted-foreground mt-16"
+              >
+                <p className="text-lg font-medium">
+                  Good things are coming ✨
+                </p>
+                <p className="mt-2 text-sm">
+                  We’re working on insightful posts. Check back soon.
+                </p>
+              </motion.div>
+            )}
+
             {blogPosts.map((post, index) => (
               <motion.div
                 key={post.title}
@@ -31,11 +55,15 @@ const Blog = () => {
                 <Link to={post.link} className="block">
                   <Card className="hover:shadow-lg transition-shadow mb-8">
                     <CardHeader>
-                      <CardTitle className="text-2xl">{post.title}</CardTitle>
+                      <CardTitle className="text-2xl">
+                        {post.title}
+                      </CardTitle>
                       <CardDescription>{post.date}</CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">{post.description}</p>
+                      <p className="text-muted-foreground">
+                        {post.description}
+                      </p>
                     </CardContent>
                   </Card>
                 </Link>
@@ -49,3 +77,4 @@ const Blog = () => {
 };
 
 export default Blog;
+
