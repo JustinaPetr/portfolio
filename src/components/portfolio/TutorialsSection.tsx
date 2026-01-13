@@ -11,7 +11,7 @@ const videoTutorials = [
   {
     title: "How to Get Access to Hyperliquid RPC Endpoints on Lava Gateway",
     link: "https://youtu.be/yFQ3mq2F-Cc"
-  }
+  },
   {
     title: "Intro to composable search with Index Network",
     description: "Indexing the Base documentation",
