@@ -5,6 +5,14 @@ import { Video, FileText } from "lucide-react";
 
 const videoTutorials = [
   {
+   title: "Build the Next Generation of Dapps on Arbitrum with Arbitrum Stylus via Lava RPC", 
+   link: "https://youtu.be/9pvCE-LfDP4"
+  },
+  {
+    title: "How to Get Access to Hyperliquid RPC Endpoints on Lava Gateway",
+    link: "https://youtu.be/yFQ3mq2F-Cc"
+  }
+  {
     title: "Intro to composable search with Index Network",
     description: "Indexing the Base documentation",
     link: "https://www.youtube.com/watch?v=cOuJorrCtps",
@@ -29,6 +37,10 @@ const videoTutorials = [
 ];
 
 const writtenTutorials = [
+  {
+    title: "Understanding Lava RPC Provider Reputation",
+    link: "https://www.lavanet.xyz/blog/understanding-lava-rpc-provider-reputation",
+  },
   {
     title: "Getting Started With ComposeDB on Ceramic",
     link: "https://blog.ceramic.network/getting-started-with-composedb-on-ceramic-2/",
