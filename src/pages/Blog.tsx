@@ -40,7 +40,7 @@ const Blog = () => {
                   Good things are coming ✨
                 </p>
                 <p className="mt-2 text-sm">
-                  We’re working on insightful posts. Check back soon.
+                  I am working on some new posts. Check back soon.
                 </p>
               </motion.div>
             )}
