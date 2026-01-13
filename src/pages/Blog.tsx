@@ -4,12 +4,6 @@ import { BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const blogPosts = [
-  {
-    title: "Building Full Stack Apps with Lovable.dev",
-    date: "March 15, 2024",
-    description: "A comprehensive guide to building modern web applications using Lovable.dev's AI-powered development platform.",
-    link: "/blog/building-with-lovable"
-  }
 ];
 
 const Blog = () => {
