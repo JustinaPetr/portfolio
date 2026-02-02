@@ -9,8 +9,20 @@ import {
 import { BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
+type BlogPost = {
+  title: string;
+  date: string;
+  description: string;
+  link: string;
+};
+
 const blogPosts = [
-  // posts will go here later
+  {
+    title: "Tips and tricks for optimizing documentation for LLMs",
+    date: "Dec 17, 2025",
+    description: "An overview of some of the best practices for optimizing documentation sites for LLMs",
+    link: "/blog/docs-geo-optimization",
+  },
 ];
 
 const Blog = () => {
